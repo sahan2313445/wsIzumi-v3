@@ -19,19 +19,19 @@ const DATABASE_URL = process.env.DATABASE_URL === undefined ? './database.db' : 
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 // Export configuration variables
 module.exports = {
-  HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+  HANDLERS: (process.env.PREFIX || '^[.]').trim(),
   BRANCH: "main",
   MODE: (process.env.MODE || 'private').toLowerCase(),
   ERROR_MSG: toBool(process.env.ERROR_MSG) || true,
   LOG_MSG: toBool(process.env.LOG_MSG) || true,
-  READ_CMD: toBool(process.env.READ_CMD),
+  READ_CMD: toBool(process.env.READ_CMD),true
   SESSION_ID: process.env.SESSION_ID || "izumi~v5A80yR4",
   MENU_URL: process.env.MENU_URL || "https://ik.imagekit.io/eypz/1722873079279_lHOJlrddC.png",
   CAPTION: process.env.CAPTION || "Iᴢᴜᴍɪ",
   READ_MSG: toBool(process.env.READ_MSG),
   OWNER_NAME: process.env.OWNER_NAME || "Eypz God",
   BOT_NAME: process.env.BOT_NAME || "𝚰𝚭𝐔𝚳𝚰-𝚅3",
-  SUDO: process.env.SUDO || null,
+  SUDO: process.env.SUDO || 94789281290,
   LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
   STICKER_PACKNAME: process.env.STICKER_PACKNAME || "Izumi-v3,❤️",
   AUDIO_DATA: process.env.AUDIO_DATA || "Eʏᴘᴢ;Iᴢᴜᴍɪ-ᴠ3;https://i.imgur.com/cO0TZJv.jpeg",
